@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="static/contact.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h1>Contact Us</h1>
+            <p>Is there anything we can help you with? Or Need to get in touch with Us? Feel free to fill the given form and contact us!</p>
+        </div>
+
+        <div class="right-side">
+            <form action="/contact" method="POST">
+                <div class="name-container">
+                    <div class="name-field">
+                        <label for="first_name">First Name:</label>
+                        <input name="first_name" type="text" id="first_name">
+                    </div>
+                    <div class="name-field">
+                        <label for="last_name">Last Name:</label>
+                        <input name="last_name" type="text" id="last_name">
+                    </div>
+                </div>
+
+                <label for="user_email">Email:</label>
+                <input name="user_email" type="email" id="user_email">
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="4"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

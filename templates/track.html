@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Tracking</title>
+    <link rel="stylesheet" href="static/track.css">
+</head>
+<body>
+    <form id="TrackForm" method="POST" action="/track">
+        <div class="form-group">
+            <div>
+                <label>First Name:</label>
+                <input type="text" name="first_name" required>
+            </div>
+            <div>
+                <label>Last Name:</label>
+                <input type="text" name="last_name" required>
+            </div>
+        </div>
+        
+        <label>Product Link:</label>
+        <input name="prod_link" type="text" required>
+        
+        <label>Desirable Price:</label>
+        <input name="desirable_price" type="text" required>
+        
+        <label>Phone No:</label>
+        <input name="phone_no" type="text" required>
+        
+        <button type="submit" id="searchBtn">Submit</button>
+    </form>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <ul>
+        {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+    
+</body>
+</html>
