@@ -6,6 +6,8 @@ Simply by typing a product name and specifying a minimum and maximum range, resu
 
 By entering the product URL, affordable price and your phone number, get notified when price will be below the affordable price.
 
+The user should download geckodriver in their device to make it work in Mozilla Firefox. The user must also create their own twillio api to make it work 
+
 ### System Components
 Selenium: For Scraping Real-Time Product info from Daraz
 <br>
